@@ -1,5 +1,12 @@
 defaultStorageMapping: TRASH
-jobs: {}
+jobs:
+  Job-1:
+    excludeSelector: ""
+    id: 1
+    includeSelector: "{ location: SOURCE name: DAILY_14_TOTAL_SHORT }"
+    name: New Job
+    steps: []
+    subgraphs: []
 locations:
   DESTINATION:
     mappingDefinitions:
@@ -1983,5 +1990,9 @@ stepTypes:
             {% endif %}
     name: Persistent Stage
     version: 1
-subgraphs: {}
+subgraphs:
+  Subgraph-2:
+    id: "2"
+    name: New Subgraph
+    steps: []
 version: 1
